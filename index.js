@@ -56,14 +56,21 @@ function total() {
 }*/
 
 function removeFromCart(name) {
+  var items = []
   //var i = 8
   //var n = 15
   for (let i = 0; i < cart.length; i++) {
-    if (`${cart[i].itemName}` === name) {
+    items.push(`${cart[i].itemName}`)
+  } for (let i = 0; i < items.length; i++) {
+    if (items[i] === name) {
+      cart.splice(i, 1);
+  } else {
+      return 'That item is not in your cart.'
+    } /*if (`${cart[i].itemName}` === name) {
       console.log(cart[i])
     } else {
       console.log("nothing")
-    }
+    }*/
   } //cart.splice(n, 1) return "That item is not in your cart."
 }
 
