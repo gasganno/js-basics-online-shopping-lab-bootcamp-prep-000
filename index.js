@@ -59,12 +59,12 @@ function removeFromCart(name) {
   //var i = 8
   //var n = 15
   for (let i = 0; i < cart.length; i++) {
-    if (!cart[i].itemName === name) {
-      return "That item is not in your cart."
+    if (cart[i].itemName === name) {
+      console.log(cart[i])
     } else {
-      cart.splice(i, 1)
+      console.log("nothing")
     }
-  } //cart.splice(n, 1)
+  } //cart.splice(n, 1) return "That item is not in your cart."
 }
 
 function placeOrder(number) {
