@@ -57,13 +57,13 @@ function removeFromCart(name) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].itemName === name) {
       cart.splice(i, 1)
-      
-  } return cart 
+
+  } return cart
   
 } return 'That item is not in your cart.'
 }
 
-function removeFromCart(name) {
+/*function removeFromCart(name) {
   var items = []
   for (let i = 0; i < cart.length; i++) {
     items.push(`${cart[i].itemName}`)
@@ -72,7 +72,7 @@ function removeFromCart(name) {
       cart.splice(i, 1)
   } return 'That item is not in your cart.'
   }
-}
+}*/
 
 function placeOrder(number) {
   var newTotal = total()
