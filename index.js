@@ -24,9 +24,9 @@ function viewCart() {
   } else if (cartItems.length > 1) {
     var lastItem = cartItems.pop();
     return `In your cart, you have ${cartItems.join(", ")}, and ${lastItem}.`
-  } else {
+  }
     return 'Your shopping cart is empty.'
-}
+//}
 }
 
 function total() {
