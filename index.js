@@ -56,15 +56,15 @@ function total() {
 }*/
 
 function removeFromCart(name) {
-  //var i = 0
-  var n = 15
+  var i = 0
+  //var n = 15
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].itemName === name) {
-      n = i;
-    } else {
+    if (!cart[i].itemName === name) {
       return "That item is not in your cart."
+    } else {
+      cart.splice(i, 1)
     }
-  } cart.splice(n, 1)
+  } //cart.splice(n, 1)
 }
 
 function placeOrder(number) {
